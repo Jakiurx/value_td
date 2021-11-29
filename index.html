@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <table border="1" width="100px" height="50px">
+        <tr>
+            <td value="0" id="td1"></td>
+        </tr>
+    </table>
+    <input type="button" value="Zmień value" onclick="zmien_value()">
+    <input type="button" value="Czytaj value" onclick="czytaj_value()">
+</body>
+<script>
+    function zmien_value(){
+        document.getElementById("td1").value = 4;
+    }
+
+    function czytaj_value(){
+        console.log(document.getElementById("td1").value);
+    }
+
+</script>
+
+</html>
